@@ -96,6 +96,18 @@ let progres = (e) => {
     progressContainerEl.style.width = `${timeWidth}%`;
 }
 
+progresEl.addEventListener('click', (e) => {
+    const pWidth = progresEl.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audioEl.duration;
+    audioEl.currentTime = (clickX / pWidth) * duration;
+
+    playSong();
+});
+
+audioEl.addEventListener('ended', changeMusic);
+
+
 
 // events
 playBtn.addEventListener(`click`, playSong);
