@@ -39,8 +39,8 @@ body {
 }
 
 .album-cover-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 2rem;
     object-fit: cover;
@@ -75,17 +75,16 @@ body {
 
 .progress-container {
     background-color: tomato;
-    width: 50%;
+    width: 0%;
     height: inherit;
     border-radius: inherit;
+    transition: width 0.3s ease;
 }
 
 .time-container {
     display: flex;
     justify-content: space-between;
 }
-
-.music-info-and-controller {}
 
 .title {
     font-size: 2.5rem;
