@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./img/playlist-favicon.png">
+        <link rel="stylesheet" href="./css/style.css">
+    <title>Music Player New</title>
+</head>
+
+<body>
+
+    <div id="music-container" class="music-container">
+        <div class="album-cover">
+            <img src="img/Eminem-Beautiful.png" alt="Album" class="album-cover-img" id="album-cover-img">
+        </div>
+        <div class="progress-and-time-container">
+            <div class="progress" id="progress">
+                <div class="progress-container" id="progress-container">
+
+                </div>
+            </div>
+            <div class="time-container">
+                <span>00:00</span>
+                <span>00:00</span>
+            </div>
+        </div>
+
+        <div class="music-info-and-controller">
+            <h2 class="title" id="title">Eminem - Beautiful</h2>
+
+            <div class="controls">
+                <button class="btn" id="backword">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button class="btn btn-big" id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="btn" id="forward">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

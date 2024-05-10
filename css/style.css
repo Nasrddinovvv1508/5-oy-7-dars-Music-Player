@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 62.5%;
+    /* 10px */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffdee9;
+    background-size: 100% 100%;
+    background-position: 0px 0px;
+    background-image: linear-gradient(90deg, #A100FFFF 0%, #71C4FFFF 100%);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-container {
+    background-color: #fcfcfc;
+    width: 400px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-align: center;
+}
+
+.album-cover-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    object-fit: cover;
+    animation: spinner 15s linear infinite;
+    animation-play-state: paused;
+    position: relative;
+}
+
+.music-container.play .album-cover-img {
+    animation-play-state: running;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.progress-and-time-container {
+    margin-bottom: 2rem;
+}
+
+.progress {
+    height: 6px;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 1rem;
+}
+
+.progress-container {
+    background-color: tomato;
+    width: 50%;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.time-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.music-info-and-controller {}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn-big {
+    font-size: 3rem;
+}
